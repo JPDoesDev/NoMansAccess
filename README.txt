@@ -11,7 +11,7 @@ No Man's Access - A computer vision model to generate text to speach functionali
 =======================================================================================================================================                                                                                                                               
 
 Overview:
-This is a computer vision model that uses a YOLOv8 model trained on captured images from Hello Games "No Man's Sky". The game currentley
+This is a computer vision model that uses a YOLOv8 model trained on captured images from Hello Games "No Man's Sky". The game currently
 does not have built in screen reader functionality and also does not function well with windows built in screen magnifier software making
 the game difficult to play for visually impaired players. 
 
@@ -47,3 +47,5 @@ v0.1
 
 
 GitHub: https://github.com/JPDoesDev/NoMansAccess
+
+YouTube Demo: https://www.youtube.com/watch?v=QprxRfzr6VA
