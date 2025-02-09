@@ -4,7 +4,7 @@ import pyfiglet
 
 # Use the below settings to alter behavior of the main application.
 
-SPEACHRATE = 250                               # Change the speech rate of speed.
+SPEECHRATE = 250                               # Change the speech rate of speed.
 VOICEVOLUME = 1                                # Adjust the relative volume of the voice.
 KEY1 = '1'                                     # Key binging for low detail screen reads.
 KEY2 = '2'                                     # Key bindingg for higher detail screen reads.
