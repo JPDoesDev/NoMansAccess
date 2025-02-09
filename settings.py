@@ -31,7 +31,7 @@ def print_menu():
     print(f"Press '{KEYQUIT}' to quit.")
 
 # Uncomment the below to demonstrate if CUDA cores are available
-# print(f"CUDA cores available for use: {torch.cuda.is_available()}")
+#print(f"CUDA cores available for use: {torch.cuda.is_available()}")
 
 # Prints header menu
 print_menu()

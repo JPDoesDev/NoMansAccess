@@ -2,7 +2,9 @@
 Simple tool to rapidly capture screenshots and save them in a local directory.
 """
 
-import os, time, keyboard
+import os
+import time
+import keyboard
 from PIL import ImageGrab
 
 KEY = '1'
@@ -18,7 +20,7 @@ def take_screenshot(folder_name):
     screenshot = ImageGrab.grab()
 
     # Create a unique filename based on the current timestamp
-    # Use the timestamp so that no two images are ever capturied with the same name
+    # Use the timestamp so that no two images are ever captured with the same name
     timestamp = time.strftime("%Y%m%d-%H%M%S")
     file_path = os.path.join(folder_name, f"screenshot_{timestamp}.png")
 

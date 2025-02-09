@@ -1,12 +1,15 @@
 """
-This tool is used to split up a data set of .png and .txt file pairs into a folder structure that is used by 
-the ModelGen tool. I takes the matching pairs from the "annot_images" folder, keeps the matching pairs together 
-but shuffles the order then splits them into 3 folders with 70% going towards training, 15% towards test, and 15% towards validation.
+This tool is used to split up a dataset of .png and .txt file pairs into a folder structure that is used by 
+the ModelGen tool. It takes the matching pairs from the "annot_images" folder, keeps the matching pairs together 
+but shuffles the order, then splits them into three folders with 70% going towards training, 15% towards testing, 
+and 15% towards validation.
 """
 
-import os, random, shutil
+import os
+import random
+import shutil
 
-def move_files(pairs, subset_name):
+def move_files(pairs, subset_name, base_dir, output_dir):
     for img_file, txt_file in pairs:
         # Move image files
         shutil.move(os.path.join(base_dir, img_file), os.path.join(output_dir, subset_name, 'images', img_file))
@@ -14,8 +17,8 @@ def move_files(pairs, subset_name):
         shutil.move(os.path.join(base_dir, txt_file), os.path.join(output_dir, subset_name, 'labels', txt_file))
 
 def main():
-    base_dir = './tools/DatasetSplit/annot_images/'
-    output_dir = './tools/DatasetSplit/dataset/model_data'
+    base_dir = 'tools/DatasetSplit/annot_images/'
+    output_dir = 'tools/DatasetSplit/dataset/model_data'
 
     sub_dirs = ['train', 'valid', 'test']
     for sub_dir in sub_dirs:
@@ -42,10 +45,9 @@ def main():
     val_pairs = pairs[train_split:train_split + val_split]
     test_pairs = pairs[train_split + val_split:]
 
-
-    move_files(train_pairs, 'train')
-    move_files(val_pairs, 'valid')
-    move_files(test_pairs, 'test')
+    move_files(train_pairs, 'train', base_dir, output_dir)
+    move_files(val_pairs, 'valid', base_dir, output_dir)
+    move_files(test_pairs, 'test', base_dir, output_dir)
 
     print("Files have been split and moved to the respective directories.")
 
