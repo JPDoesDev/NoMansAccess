@@ -1,15 +1,5 @@
-/$$   /$$                 /$$      /$$                    /$$               /$$$$$$                                                  
-| $$$ | $$                | $$$    /$$$                   | $/              /$$__  $$                                                 
-| $$$$| $$  /$$$$$$       | $$$$  /$$$$  /$$$$$$  /$$$$$$$|_//$$$$$$$      | $$  \ $$  /$$$$$$$  /$$$$$$$  /$$$$$$   /$$$$$$$ /$$$$$$$
-| $$ $$ $$ /$$__  $$      | $$ $$/$$ $$ |____  $$| $$__  $$ /$$_____/      | $$$$$$$$ /$$_____/ /$$_____/ /$$__  $$ /$$_____//$$_____/
-| $$  $$$$| $$  \ $$      | $$  $$$| $$  /$$$$$$$| $$  \ $$|  $$$$$$       | $$__  $$| $$      | $$      | $$$$$$$$|  $$$$$$|  $$$$$$ 
-| $$\  $$$| $$  | $$      | $$\  $ | $$ /$$__  $$| $$  | $$ \____  $$      | $$  | $$| $$      | $$      | $$_____/ \____  $$\____  $$
-| $$ \  $$|  $$$$$$/      | $$ \/  | $$|  $$$$$$$| $$  | $$ /$$$$$$$/      | $$  | $$|  $$$$$$$|  $$$$$$$|  $$$$$$$ /$$$$$$$//$$$$$$$/
-|__/  \__/ \______/       |__/     |__/ \_______/|__/  |__/|_______/       |__/  |__/ \_______/ \_______/ \_______/|_______/|_______/ 
-                                                                                                                                      
-# No Man's Access - A computer vision model to generate text to speach functionality for visually imapired accesibility.
-=======================================================================================================================================                                                                                                                               
-
+                                                 
+# No Man's Access - A computer vision model to generate text to speach functionality for visually imapired accesibility.                                                                                                        
 ## Overview:
 No Man's Access is a computer vision model that uses a YOLOv8 model trained on images captured from Hello Games' "No Man's Sky". The game currently lacks built-in screen reader functionality and does not work well with Windows' built-in screen magnifier software, making it difficult for visually impaired players to enjoy the game.
 
